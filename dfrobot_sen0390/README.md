@@ -1,6 +1,8 @@
 # example configuration
 # LTR_ALS_PS AS SIMILAR ITEM
 
+# Work in Progress
+
 sensor:
   - platform: dfrobot_sen0390
     id: dfrobot_sen0390_lux_sensor
