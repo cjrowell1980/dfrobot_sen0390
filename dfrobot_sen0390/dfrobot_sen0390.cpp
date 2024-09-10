@@ -1,5 +1,5 @@
 // - namespace:  dfrobot_sen0390
-// - class:      DFRobotSEN0930Sensor
+// - class:      DFRobotSEN0390Sensor
 
 #include "sen0390.h"
 #include "esphome/core/log.h"
@@ -18,7 +18,12 @@ namespace esphome {
 			LOG_PIN("  Enable Pin: ", this->enable_pin_);
 		}
 
-		
+		void DFRobotSEN0390Sensor::setup() {
+			ESP_LOGD(TAG, "'%s' - setup BEGIN", this->name_.c_str());
+			if (!esphome::dfrobot_sen0390::enable_pin_setup_complete) {
+				if (dfrobot_sen0390->enable_pin)
+			}
+		}
 
     } // namespace dfrobot_sen0390
 }// namespace esphome

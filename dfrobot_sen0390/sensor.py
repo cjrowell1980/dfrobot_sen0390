@@ -1,5 +1,5 @@
 # - namespace:  dfrobot_sen0390
-# - class:      DFRobotSEN0930Sensor
+# - class:      DFRobotSEN0390Sensor
 
 import esphome.codegen as cg
 import esphome.config_validation as cv
